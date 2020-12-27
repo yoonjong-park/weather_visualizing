@@ -1,6 +1,6 @@
 # weather-visualizing
 
-This code shows a graphic image on the front of the browser depending on the weather.
+This code shows a graphic image on the front of the browser depending on the weather with you.
 
 ## How To Use
 
