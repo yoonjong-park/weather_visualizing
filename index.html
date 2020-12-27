@@ -4,7 +4,9 @@
 
 <head>
   <meta charset="UTF-8">
+
   <link rel="stylesheet" href="index.css">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="Keywords" content="Weather 날씨" />
   <meta name="Description" content="Weather Visualizing" />
@@ -14,12 +16,60 @@
 
 
 <body>
-  <script src="weather.js"></script>
-  <script src="main.css"></script>
-  <h1 class="weather-status">Weather Loading...</h1>
+  <div class="wrapper">
 
+    <div class="icon sun-shower">
+      <div class="cloud"></div>
+      <div class="sun">
+        <div class="rays"></div>
+      </div>
+      <div class="rain"></div>
+    </div>
+
+    <div class="icon thunder-storm">
+      <div class="cloud"></div>
+      <div class="lightning">
+        <div class="bolt"></div>
+        <div class="bolt"></div>
+      </div>
+    </div>
+
+    <div class="icon cloudy">
+      <div class="cloud"></div>
+      <div class="cloud"></div>
+    </div>
+
+    <div class="icon flurries">
+      <div class="cloud"></div>
+      <div class="snow">
+        <div class="flake"></div>
+        <div class="flake"></div>
+      </div>
+    </div>
+
+    <div class="icon sunny">
+      <div class="sun">
+        <div class="rays"></div>
+      </div>
+    </div>
+
+    <div class="icon rainy">
+      <div class="cloud"></div>
+      <div class="rain"></div>
+    </div>
+
+
+    <p>Remake by <a href="https://github.com/yoonjong-park" target="_blank">Github</a> yoonjong Park </br>Based on <a
+        href="https://dribbble.com/shots/2097042-Widget-Weather" target="_blank">Dribbble</a> by kylor</p>
+
+    <div class="text"> </div>
+
+  </div>
+
+  <script src="weather.js"></script>
 
 </body>
+
 
 
 </html>
