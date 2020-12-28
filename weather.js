@@ -40,7 +40,7 @@ function getWeather(lat, lon) {
         iconSunny.style.display = 'block';
       } else if ((weatherId >= 300 && weatherId <= 321) || (weatherId >= 500 && weatherId <= 531)) {
         iconRainy.style.display = 'block';
-      } else if (weatherId >= 700 && weatherId < 800) || (weatherId >=900)){
+      } else if ((weatherId >= 700 && weatherId < 800) || (weatherId >=900)){
         weatherText.innerText = 'Be sunny. But Searching internet now. additional event';
       } else {
         weatherText.innerText = 'Be sunny. But Searching internet now. additional event';
