@@ -26,21 +26,22 @@ function getWeather(lat, lon) {
       console.log(weatherId);
 
       for (i of weatherStatus) {
-        if (weatherId === 800 && i != iconSunny) {
-          i.style.display = 'none';
-        } else if (weatherId >= 200 && weatherId <= 232 && i != iconThunderStorm) {
-          i.style.display = 'none';
-        } else if (weatherId >= 801 && weatherId <= 804 && i != iconCloudy) {
-          i.style.display = 'none';
-        } else if (weatherId >= 600 && weatherId <= 622 && i != iconFlurries) {
-          i.style.display = 'none';
-        } else if (weatherId >= 801 && weatherId <= 804 && i != iconSunny) {
-          i.style.display = 'none';
-        } else if ((weatherId >= 300 && weatherId <= 321) || (weatherId >= 500 && weatherId <= 531 && i != iconRainy)) {
-          i.style.display = 'none';
-        } else {
-          // weatherText.innerText = 'Searching internet ASAP. additional event';
-        }
+        i.style.display = 'none';
+      }
+      if (weatherId === 800) {
+        iconSunny.style.display = 'block';
+      } else if (weatherId >= 200 && weatherId <= 232) {
+        iconThunderStorm.style.display = 'block';
+      } else if (weatherId >= 801 && weatherId <= 804) {
+        iconCloudy.style.display = 'block';
+      } else if (weatherId >= 600 && weatherId <= 622) {
+        iconFlurries.style.display = 'block';
+      } else if (weatherId >= 801 && weatherId <= 804) {
+        iconSunny.style.display = 'block';
+      } else if ((weatherId >= 300 && weatherId <= 321) || (weatherId >= 500 && weatherId <= 531)) {
+        iconRainy.style.display = 'block';
+      } else {
+        // weatherText.innerText = 'Searching internet ASAP. additional event';
       }
     });
 }
